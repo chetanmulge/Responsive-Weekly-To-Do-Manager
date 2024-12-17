@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="container">
+            <h1>To-Do List App</h1>
+            <ul>
+                <li><a href="#login-section" class="nav-btn">Login</a></li>
+                <li><a href="#register-section" class="nav-btn">Register</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Welcome to Your Weekly Task Manager</h1>
+            <p>Register, Login, and Manage Your Weekly Tasks Easily</p>
+        </div>
+    </header>
+
+    <!-- Register Section -->
+    <section id="register-section">
+        <div class="container form-container">
+            <h2>Register</h2>
+            <form>
+                <label for="reg-username">Username</label>
+                <input type="text" id="reg-username" name="reg-username" placeholder="Enter username" required>
+
+                <label for="reg-password">Password</label>
+                <input type="password" id="reg-password" name="reg-password" placeholder="Enter password" required>
+
+                <button type="submit" class="btn">Register</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Login Section -->
+    <section id="login-section">
+        <div class="container form-container">
+            <h2>Login</h2>
+            <form action="#task-section">
+                <label for="login-username">Username</label>
+                <input type="text" id="login-username" name="login-username" placeholder="Enter username" required>
+
+                <label for="login-password">Password</label>
+                <input type="password" id="login-password" name="login-password" placeholder="Enter password" required>
+
+                <button type="submit" class="btn">Login</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Weekly Task Section -->
+    <section id="task-section" class="hidden">
+        <div class="container">
+            <h2>Weekly Task List</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Task</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td contenteditable="true">Add your task here</td>
+                        <td>Edit</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td contenteditable="true">Add your task here</td>
+                        <td>Edit</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td contenteditable="true">Add your task here</td>
+                        <td>Edit</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td contenteditable="true">Add your task here</td>
+                        <td>Edit</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td contenteditable="true">Add your task here</td>
+                        <td>Edit</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday</td>
+                        <td contenteditable="true">Add your task here</td>
+                        <td>Edit</td>
+                    </tr>
+                    <tr>
+                        <td>Sunday</td>
+                        <td contenteditable="true">Add your task here</td>
+                        <td>Edit</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 To-Do List App</p>
+        </div>
+    </footer>
+</body>
+</html>
